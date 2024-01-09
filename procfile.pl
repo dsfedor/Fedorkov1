@@ -33,8 +33,9 @@ foreach (@prLog) {
         if ($tmp1 =~ /<=/){
         &procStrIn;
         }
-
-    &procStrOth;
+        else {
+        &procStrOth;
+        }
 
     #print "$tmp1 \n";
     #print LOG "$tmp1 \n";
