@@ -18,7 +18,7 @@ do
 {
        $n++;   
        echo
-       $row['created'].$row['str']."\n";          
+       $row['created']." ".$row['str']."\n";          
           if ($n == 100) {		
           echo "\n"."MORE THAN 100 ROWS WERE FOUND!";
 	  break;
