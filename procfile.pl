@@ -37,7 +37,7 @@ foreach (@prLog) {
         &procStrOth;
         }
 
-    #print "$tmp1 \n";
+
     #print LOG "$tmp1 \n";
 
 }
@@ -45,7 +45,7 @@ close PRLOG;
 #close LOG;
 $dbh->disconnect();
 
-#print "finish\n";
+print "finish \n";
 #print LOG "finish\n";
 
 #processing incoming strings
@@ -77,10 +77,12 @@ my $tmp2;
 
 
             }
+  if ($id ne ''){
   #wright the ready fields into database
   $dbh->do("insert into message (created, id, int_id, str) values('$created','$id','$int_id','$str')");
+  }
 
- #print "procedure1 \n";
+ print "proc1 $created $id $int_id \n"; 
  #print LOG "procedure1 \n";
  }
 
@@ -116,6 +118,6 @@ my $tmp3;
   #wright the ready fields into database
   $dbh->do("insert into log (created, int_id, str, address) values('$created','$int_id','$str','$address')");
 
- #print "procedure2 \n";
+ print "proc2 $created $int_id $address \n";
  #print LOG "procedure2 \n";
  }
