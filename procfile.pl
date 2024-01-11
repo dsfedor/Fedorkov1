@@ -103,7 +103,8 @@ my $tmp3;
      $created = $created . " " . shift(@strPL_in_w);
      $int_id = shift(@strPL_in_w);
      $str = join " ", @strPL_in_w; #result without first two symbols
-
+     $str =~ s/\?//g; #delet "?" from string
+     
 #check the first availability the mail address
             foreach (@strPL_in_w) {
                    $tmp3 = $_;
