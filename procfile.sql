@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Янв 10 2024 г., 02:41
+-- Время создания: Янв 12 2024 г., 22:10
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -1615,6 +1615,7 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:41:04', '1RwtLE-000Kku-Tm', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 14:41:04', '1RwtLE-000Kku-Tm', 'Completed', ''),
 ('2012-02-13 14:41:04', '1RwtJb-0009RI-5g', 'Completed', ''),
+('2012-02-13 14:41:05', '1RwtJT-0009RI-B4', '** yzmruqsq@zemlyanka-v.ru R=dnslookup T=remote_smtp: SMTP error from remote mail server after RCPT TO:<yzmruqsq@zemlyanka-v.ru>: host ASPMX.L.GOOGLE.COM [209.85.137.26]: 550-5.1.1 The email account that you tried to reach does not exist. Please tryn550-5', 'yzmruqsq@zemlyanka-v.ru'),
 ('2012-02-13 14:41:05', '1RwtJT-0009RI-B4', '=> mzqckjfnh@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329129665 je3si6317019lab.25"', 'mzqckjfnh@gmail.com'),
 ('2012-02-13 14:41:05', '1RwtLF-000L0n-Bb', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 14:41:05', '1RwtLF-000L0n-Bb', 'Completed', ''),
@@ -1689,7 +1690,7 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:41:23', '1RwtJf-0009RI-Fy', '** mnryuqgjepd@yahoo.com R=dnslookup T=remote_smtp: SMTP error from remote mail server after end of data: host mta6.am0.yahoodns.net [74.6.136.65]: 554 delivery error: dd Sorry your message to mnryuqgjepd@yahoo.com cannot be delivered. This account has be', 'mnryuqgjepd@yahoo.com'),
 ('2012-02-13 14:41:23', '1RwtLX-00060Y-1j', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 14:41:23', '1RwtLX-00060Y-1j', 'Completed', ''),
-('2012-02-13 14:41:23', '1RwtJy-0009RI-HD', 'SMTP error from remote mail server after MAIL FROM:<tpxmuwr@somehost.ru>: host cluster4.eu.messagelabs.com [85.158.143.35]: 421-the config data could not be retrieved (code CDS871)\n421 (#4.4.3)', 'FROM:<tpxmuwr@somehost.ru>:'),
+('2012-02-13 14:41:23', '1RwtJy-0009RI-HD', 'SMTP error from remote mail server after MAIL FROM:<tpxmuwr@somehost.ru>: host cluster4.eu.messagelabs.com [85.158.143.35]: 421-the config data could not be retrieved (code CDS871)n421 (#4.4.3)', 'FROM:<tpxmuwr@somehost.ru>:'),
 ('2012-02-13 14:41:23', '1RwtJi-0009RI-Sb', '** ksppvvxxdo@yahoo.com R=dnslookup T=remote_smtp: SMTP error from remote mail server after end of data: host mta6.am0.yahoodns.net [67.195.168.230]: 554 delivery error: dd Sorry your message to ksppvvxxdo@yahoo.com cannot be delivered. This account has b', 'ksppvvxxdo@yahoo.com'),
 ('2012-02-13 14:41:23', '1RwtLX-0006GE-Jf', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 14:41:23', '1RwtLX-0006GE-Jf', 'Completed', ''),
@@ -1856,10 +1857,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:41:46', '1RwtEu-0002zL-PR', 'Completed', ''),
 ('2012-02-13 14:41:46', '1RwtJg-0009RI-Hu', '=> uencjoinzkc@hotmail.com R=dnslookup T=remote_smtp H=mx3.hotmail.com [65.54.188.126] C="250 <fzofqvzknzijvzbdqrzhuxcbdtvvncl@whois.somehost.ru> Queued mail for delivery"', 'uencjoinzkc@hotmail.com'),
 ('2012-02-13 14:41:46', '1RwtJy-0009RI-Vh', '=> struy@superpechi.ru R=dnslookup T=remote_smtp H=superpechi.ru [87.242.79.66] X=TLSv1:AES256-SHA:256 C="250 OK id=1RwtLn-0004vM-56"', 'struy@superpechi.ru'),
-('2012-02-13 14:41:46', '1RwtJy-0009RI-Vh', 'Completed', ''),
-('2012-02-13 14:41:47', '1RwtJW-0009RI-6q', '** mnryuqgjepd@yahoo.com R=dnslookup T=remote_smtp: SMTP error from remote mail server after end of data: host mta6.am0.yahoodns.net [67.195.168.230]: 554 delivery error: dd Sorry your message to mnryuqgjepd@yahoo.com cannot be delivered. This account has', 'mnryuqgjepd@yahoo.com'),
-('2012-02-13 14:41:47', '1RwtLv-000IAt-4S', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>');
+('2012-02-13 14:41:46', '1RwtJy-0009RI-Vh', 'Completed', '');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:41:47', '1RwtJW-0009RI-6q', '** mnryuqgjepd@yahoo.com R=dnslookup T=remote_smtp: SMTP error from remote mail server after end of data: host mta6.am0.yahoodns.net [67.195.168.230]: 554 delivery error: dd Sorry your message to mnryuqgjepd@yahoo.com cannot be delivered. This account has', 'mnryuqgjepd@yahoo.com'),
+('2012-02-13 14:41:47', '1RwtLv-000IAt-4S', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 14:41:47', '1RwtLv-000IAt-4S', 'Completed', ''),
 ('2012-02-13 14:41:47', '1RwtEu-0002zL-W2', '=> mycqnjkjqv@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329129707 je3si6316808lab.31"', 'mycqnjkjqv@gmail.com'),
 ('2012-02-13 14:41:47', '1RwtEu-0002zL-W2', 'Completed', ''),
@@ -2212,12 +2213,12 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:44:48', '1RviIc-0002QL-DI', 'vinsk.nov.su [194.85.61.78] Operation timed out', ''),
 ('2012-02-13 14:44:50', '1RvhTA-000B9y-Cq', 'Spool file is locked (another process is handling this message)', ''),
 ('2012-02-13 14:44:51', '1RvaMp-000FiI-S2', 'm1.mx.km.ru [217.197.114.100] Operation timed out', ''),
-('2012-02-13 14:44:51', '1RvaMp-000FiI-S2', '== hxyglqwidzclrii@bossmail.ru R=dnslookup T=remote_smtp defer (60): Operation timed out', 'hxyglqwidzclrii@bossmail.ru'),
+('2012-02-13 14:44:51', '1RvaMp-000FiI-S2', '== hxyglqwidzclrii@bossmail.ru R=dnslookup T=remote_smtp defer (60): Operation timed out', 'hxyglqwidzclrii@bossmail.ru');
+INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:44:52', '1Rwm8Y-000OOn-SZ', 'Spool file is locked (another process is handling this message)', ''),
 ('2012-02-13 14:44:52', '1RwQIY-000AMs-FF', 'Spool file is locked (another process is handling this message)', ''),
 ('2012-02-13 14:44:52', '1Rwr9X-0007HU-7C', 'Spool file is locked (another process is handling this message)', ''),
-('2012-02-13 14:45:05', '1RvhTT-000B9y-U7', 'grand.abkhazia.su [194.85.61.78] Operation timed out', '');
-INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:45:05', '1RvhTT-000B9y-U7', 'grand.abkhazia.su [194.85.61.78] Operation timed out', ''),
 ('2012-02-13 14:45:05', '1RvhTT-000B9y-U7', '== bwtf@grand.abkhazia.su R=dnslookup T=remote_smtp defer (60): Operation timed out', 'bwtf@grand.abkhazia.su'),
 ('2012-02-13 14:45:12', '1Rwr9X-0007HU-7C', 'tarantula.ru [193.232.159.145] Operation timed out', ''),
 ('2012-02-13 14:45:18', '1RwRs2-000IbI-OY', 'Spool file is locked (another process is handling this message)', ''),
@@ -2596,10 +2597,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:49:16', '1RnqhW-000MSR-1G', '** fwxvparobkymnbyemevz@london.com: retry timeout exceeded', 'fwxvparobkymnbyemevz@london.com:'),
 ('2012-02-13 14:49:16', '1RYbdU-000EhS-9a', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-44): SMTP error from remote mail server after RCPT TO:<udbbwscdnbegrmloghuf@london.com>: host mx0.gmx.com [74.208.5.90]: 450 4.3.2 Too many mails (mail bomb), try again in 1 hour(s) 15 m', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:49:16', '1RYbdU-000EhS-9a', '** fwxvparobkymnbyemevz@london.com: retry timeout exceeded', 'fwxvparobkymnbyemevz@london.com:'),
-('2012-02-13 14:49:16', '1QTYLU-000Nic-SN', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-44): SMTP error from remote mail server after RCPT TO:<udbbwscdnbegrmloghuf@london.com>: host mx0.gmx.com [74.208.5.90]: 450 4.3.2 Too many mails (mail bomb), try again in 1 hour(s) 15 m', 'udbbwscdnbegrmloghuf@london.com'),
-('2012-02-13 14:49:16', '1QTYLU-000Nic-SN', '** fwxvparobkymnbyemevz@london.com: retry timeout exceeded', 'fwxvparobkymnbyemevz@london.com:'),
-('2012-02-13 14:49:16', '1Rf8Xl-0008bW-Dp', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-44): SMTP error from remote mail server after RCPT TO:<udbbwscdnbegrmloghuf@london.com>: host mx0.gmx.com [74.208.5.90]: 450 4.3.2 Too many mails (mail bomb), try again in 1 hour(s) 15 m', 'udbbwscdnbegrmloghuf@london.com');
+('2012-02-13 14:49:16', '1QTYLU-000Nic-SN', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-44): SMTP error from remote mail server after RCPT TO:<udbbwscdnbegrmloghuf@london.com>: host mx0.gmx.com [74.208.5.90]: 450 4.3.2 Too many mails (mail bomb), try again in 1 hour(s) 15 m', 'udbbwscdnbegrmloghuf@london.com');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:49:16', '1QTYLU-000Nic-SN', '** fwxvparobkymnbyemevz@london.com: retry timeout exceeded', 'fwxvparobkymnbyemevz@london.com:'),
+('2012-02-13 14:49:16', '1Rf8Xl-0008bW-Dp', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-44): SMTP error from remote mail server after RCPT TO:<udbbwscdnbegrmloghuf@london.com>: host mx0.gmx.com [74.208.5.90]: 450 4.3.2 Too many mails (mail bomb), try again in 1 hour(s) 15 m', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:49:16', '1Rf8Xl-0008bW-Dp', '** fwxvparobkymnbyemevz@london.com: retry timeout exceeded', 'fwxvparobkymnbyemevz@london.com:'),
 ('2012-02-13 14:49:16', '1Rb9cu-00013w-E3', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-44): SMTP error from remote mail server after RCPT TO:<udbbwscdnbegrmloghuf@london.com>: host mx0.gmx.com [74.208.5.90]: 450 4.3.2 Too many mails (mail bomb), try again in 1 hour(s) 15 m', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:49:16', '1Rb9cu-00013w-E3', '** fwxvparobkymnbyemevz@london.com: retry timeout exceeded', 'fwxvparobkymnbyemevz@london.com:'),
@@ -2900,10 +2901,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:49:30', '1RwtTI-000E4Z-8t', '== grereyjbpddf@gmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 14:49:30', '1RwtTI-000E4Z-8t', '== eqkhojhkgag@rambler.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'eqkhojhkgag@rambler.ru'),
 ('2012-02-13 14:49:30', '1RwtTI-000E4Z-Av', '== uencjoinzkc@hotmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'uencjoinzkc@hotmail.com'),
-('2012-02-13 14:49:30', '1RwtTI-000E4Z-Av', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
-('2012-02-13 14:49:30', '1RwtTI-000E4Z-D2', '== bnkahhv@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'bnkahhv@mail.ru'),
-('2012-02-13 14:49:30', '1RwtTI-000E4Z-D2', '== eqkhojhkgag@rambler.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'eqkhojhkgag@rambler.ru');
+('2012-02-13 14:49:30', '1RwtTI-000E4Z-Av', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:49:30', '1RwtTI-000E4Z-D2', '== bnkahhv@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'bnkahhv@mail.ru'),
+('2012-02-13 14:49:30', '1RwtTI-000E4Z-D2', '== eqkhojhkgag@rambler.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'eqkhojhkgag@rambler.ru'),
 ('2012-02-13 14:49:30', '1RqlIW-000E2U-5z', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-44): SMTP error from remote mail server after RCPT TO:<udbbwscdnbegrmloghuf@london.com>: host mx0.gmx.com [74.208.5.90]: 450 4.3.2 Too many mails (mail bomb), try again in 1 hour(s) 14 m', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:49:30', '1RqlIW-000E2U-5z', '** fwxvparobkymnbyemevz@london.com: retry timeout exceeded', 'fwxvparobkymnbyemevz@london.com:'),
 ('2012-02-13 14:49:30', '1RwAuW-000MHR-Cm', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-44): SMTP error from remote mail server after RCPT TO:<udbbwscdnbegrmloghuf@london.com>: host mx0.gmx.com [74.208.5.90]: 450 4.3.2 Too many mails (mail bomb), try again in 1 hour(s) 14 m', 'udbbwscdnbegrmloghuf@london.com'),
@@ -3191,12 +3192,12 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:49:38', '1RYcLZ-000C1I-5P', 'Completed', ''),
 ('2012-02-13 14:49:38', '1Rf8Nl-0001C4-Lm', 'Completed', ''),
 ('2012-02-13 14:49:38', '1RwtTR-000E4Z-MT', '== qdtuwrwfpb@gmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'qdtuwrwfpb@gmail.com'),
-('2012-02-13 14:49:38', '1RwtTR-000E4Z-Pt', '== kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'kyfoexpiabw@hotmail.com'),
+('2012-02-13 14:49:38', '1RwtTR-000E4Z-Pt', '== kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'kyfoexpiabw@hotmail.com');
+INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:49:38', '1RwtTR-000E4Z-Pt', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:49:38', '1RbAO8-000I7i-KO', 'Completed', ''),
 ('2012-02-13 14:49:38', '1RwtTW-000H7v-9Y', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
-('2012-02-13 14:49:38', '1RwtTW-000H7v-9Y', 'Completed', '');
-INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:49:38', '1RwtTW-000H7v-9Y', 'Completed', ''),
 ('2012-02-13 14:49:38', '1RwtTW-000H81-9U', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 14:49:38', '1RwtTW-000H81-9U', 'Completed', ''),
 ('2012-02-13 14:49:38', '1RSShJ-000LQD-3L', 'Completed', ''),
@@ -3495,10 +3496,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:49:46', 'SMTP', 'connection from rtmail.rushost.ru [109.70.26.4] closed by QUIT', ''),
 ('2012-02-13 14:49:47', '1RwtTb-000E4Z-J8', '== grereyjbpddf@gmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 14:49:47', '1RwtTb-000E4Z-LM', '== rpxiqak@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'rpxiqak@mail.ru'),
-('2012-02-13 14:49:47', '1RwtTb-000E4Z-NG', '== lgwvtemqsmcx@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'lgwvtemqsmcx@mail.ru'),
-('2012-02-13 14:49:47', '1RwtTb-000E4Z-Q5', '== thauocarief@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'thauocarief@yahoo.com'),
-('2012-02-13 14:49:47', '1RwtTb-000E4Z-Q5', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com');
+('2012-02-13 14:49:47', '1RwtTb-000E4Z-NG', '== lgwvtemqsmcx@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'lgwvtemqsmcx@mail.ru');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:49:47', '1RwtTb-000E4Z-Q5', '== thauocarief@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'thauocarief@yahoo.com'),
+('2012-02-13 14:49:47', '1RwtTb-000E4Z-Q5', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:49:47', '1RwtTb-000E4Z-TU', '== thauocarief@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'thauocarief@yahoo.com'),
 ('2012-02-13 14:49:47', '1RwtTb-000E4Z-TU', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:49:47', '1RwtTb-000E4Z-Vh', '== thauocarief@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'thauocarief@yahoo.com'),
@@ -3773,10 +3774,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:49:58', '1RwtTg-000E4Z-9w', 'Completed', ''),
 ('2012-02-13 14:49:58', '1RwtTb-000E4Z-E5', '=> qdtuwrwfpb@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130198 b5si5276933lbn.57"', 'qdtuwrwfpb@gmail.com'),
 ('2012-02-13 14:49:58', '1RwtTb-000E4Z-E5', 'Completed', ''),
-('2012-02-13 14:49:58', '1RwtTV-000E4Z-7j', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130198 c6si5276772lbn.58"', 'grereyjbpddf@gmail.com'),
-('2012-02-13 14:49:58', '1RwtTj-000E4Z-Qi', '=> fnuxjluqtxggnye@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130198 l6si5279299lba.41"', 'fnuxjluqtxggnye@gmail.com'),
-('2012-02-13 14:49:58', '1RwtTj-000E4Z-Qi', 'Completed', '');
+('2012-02-13 14:49:58', '1RwtTV-000E4Z-7j', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130198 c6si5276772lbn.58"', 'grereyjbpddf@gmail.com');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:49:58', '1RwtTj-000E4Z-Qi', '=> fnuxjluqtxggnye@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130198 l6si5279299lba.41"', 'fnuxjluqtxggnye@gmail.com'),
+('2012-02-13 14:49:58', '1RwtTj-000E4Z-Qi', 'Completed', ''),
 ('2012-02-13 14:49:58', '1RwtTV-000E4Z-Ah', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130198 ic2si4501052lab.40"', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 14:49:58', '1RwtTj-000E4Z-IN', '=> mdedilrnier@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1RwtTq-0004Bp-5D"', 'mdedilrnier@mail.ru'),
 ('2012-02-13 14:49:58', '1RwtTQ-000E4Z-TN', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130198 tu6si6327983lab.26"', 'grereyjbpddf@gmail.com'),
@@ -4111,9 +4112,9 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:50:07', '1Rvi21-000Ja7-TV', 'Spool file is locked (another process is handling this message)', ''),
 ('2012-02-13 14:50:07', '1RwtTI-000E4Z-D2', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130207 je3si6329307lab.19"', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 14:50:07', '1RwtTA-000E4Z-2T', '=> bnkahhv@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20] C="250 OK id=1RwtTz-0007MK-I0"', 'bnkahhv@mail.ru'),
-('2012-02-13 14:50:07', '1RwtTR-000E4Z-Aa', '=> kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp H=mx2.hotmail.com [65.55.92.152] C="250 <lwhngxdqxepfnewgvuczdcqcgzgqnq@whois.somehost.ru> Queued mail for delivery"', 'kyfoexpiabw@hotmail.com'),
-('2012-02-13 14:50:07', '1RwtTC-000E4Z-JQ', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130207 ic2si4501281lab.28"', 'grereyjbpddf@gmail.com');
+('2012-02-13 14:50:07', '1RwtTR-000E4Z-Aa', '=> kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp H=mx2.hotmail.com [65.55.92.152] C="250 <lwhngxdqxepfnewgvuczdcqcgzgqnq@whois.somehost.ru> Queued mail for delivery"', 'kyfoexpiabw@hotmail.com');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:50:07', '1RwtTC-000E4Z-JQ', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130207 ic2si4501281lab.28"', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 14:50:07', '1RwtTM-000E4Z-Oa', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130207 e10si5281219lbr.28"', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 14:50:08', '1RwtTG-000E4Z-TC', '=> upzgjmluokmapgrz@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1RwtTz-0007NS-QI"', 'upzgjmluokmapgrz@mail.ru'),
 ('2012-02-13 14:50:08', '1RwtTG-000E4Z-TC', 'Completed', ''),
@@ -4405,10 +4406,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:50:27', '1RwtTU-000E4Z-4I', 'SMTP error from remote mail server after initial connection: host mta6.am0.yahoodns.net [98.139.175.225]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http://postmaster.yahoo.com/errors/421-ts02.html', ''),
 ('2012-02-13 14:50:27', '1RwtTU-000E4Z-4I', '== ksppvvxxdo@yahoo.com R=dnslookup T=remote_smtp defer (0): SMTP error from remote mail server after initial connection: host mta6.am0.yahoodns.net [98.139.175.225]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http:/', 'ksppvvxxdo@yahoo.com'),
 ('2012-02-13 14:50:27', '1RwtTf-000E4Z-K8', '=> qnvno@mikhailov.pp.ru R=dnslookup T=remote_smtp H=mxs.valuehost.ru [217.112.42.22] C="250 2.0.0 Ok: queued as 94FF0C9704"', 'qnvno@mikhailov.pp.ru'),
-('2012-02-13 14:50:27', '1RwtTf-000E4Z-K8', 'Completed', ''),
-('2012-02-13 14:50:27', '1RwtTa-000E4Z-3D', '=> qnvno@mikhailov.pp.ru R=dnslookup T=remote_smtp H=mxs.valuehost.ru [217.112.42.22]* C="250 2.0.0 Ok: queued as A6FB4C970F"', 'qnvno@mikhailov.pp.ru'),
-('2012-02-13 14:50:27', '1RwtTa-000E4Z-3D', 'Completed', '');
+('2012-02-13 14:50:27', '1RwtTf-000E4Z-K8', 'Completed', '');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:50:27', '1RwtTa-000E4Z-3D', '=> qnvno@mikhailov.pp.ru R=dnslookup T=remote_smtp H=mxs.valuehost.ru [217.112.42.22]* C="250 2.0.0 Ok: queued as A6FB4C970F"', 'qnvno@mikhailov.pp.ru'),
+('2012-02-13 14:50:27', '1RwtTa-000E4Z-3D', 'Completed', ''),
 ('2012-02-13 14:50:27', '1RwtTa-000E4Z-0i', '=> qnvno@mikhailov.pp.ru R=dnslookup T=remote_smtp H=mxs.valuehost.ru [217.112.42.22]* C="250 2.0.0 Ok: queued as BC3EDC973F"', 'qnvno@mikhailov.pp.ru'),
 ('2012-02-13 14:50:27', '1RwtTa-000E4Z-0i', 'Completed', ''),
 ('2012-02-13 14:50:27', '1RwtTU-000E4Z-UR', 'SMTP error from remote mail server after initial connection: host mta5.am0.yahoodns.net [66.94.236.34]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http://postmaster.yahoo.com/errors/421-ts02.html', ''),
@@ -4745,10 +4746,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:52:45', '1RwtTF-000E4Z-Sm', 'Completed', ''),
 ('2012-02-13 14:52:46', '1RwtTF-000E4Z-Ag', '=> rwjs@sobez.net R=dnslookup T=remote_smtp H=ASPMX.L.GOOGLE.COM [209.85.173.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130365 nx10si6328651lab.41"', 'rwjs@sobez.net'),
 ('2012-02-13 14:52:46', '1RwtTF-000E4Z-Ag', '-> ibtkqj@sobez.net R=dnslookup T=remote_smtp H=ASPMX.L.GOOGLE.COM [209.85.173.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130365 nx10si6328651lab.41"', 'ibtkqj@sobez.net'),
-('2012-02-13 14:52:46', '1RwtTF-000E4Z-Ag', 'Completed', ''),
-('2012-02-13 14:52:46', '1Rwt0F-00048v-GN', 'SMTP error from remote mail server after RCPT TO:<glvmaehj@ru-tld.ru>: host ASPMX.L.GOOGLE.COM [209.85.173.27]: 450-4.2.1 The user you are trying to contact is receiving mail at a rate that\n450-4.2.1 prevents additional messages from being delivered. Plea', 'TO:<glvmaehj@ru-tld.ru>:'),
-('2012-02-13 14:52:49', '1RvhjD-0001qm-4t', 'agine.mordovia.ru [194.85.61.78] Operation timed out', '');
+('2012-02-13 14:52:46', '1RwtTF-000E4Z-Ag', 'Completed', '');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:52:46', '1Rwt0F-00048v-GN', 'SMTP error from remote mail server after RCPT TO:<glvmaehj@ru-tld.ru>: host ASPMX.L.GOOGLE.COM [209.85.173.27]: 450-4.2.1 The user you are trying to contact is receiving mail at a rate thatn450-4.2.1 prevents additional messages from being delivered. Plea', 'TO:<glvmaehj@ru-tld.ru>:'),
+('2012-02-13 14:52:49', '1RvhjD-0001qm-4t', 'agine.mordovia.ru [194.85.61.78] Operation timed out', ''),
 ('2012-02-13 14:52:49', '1RvhjD-0001qm-4t', '== tmqod@agine.mordovia.ru R=dnslookup T=remote_smtp defer (60): Operation timed out', 'tmqod@agine.mordovia.ru'),
 ('2012-02-13 14:52:49', '1Rwt0F-00048v-GN', '=> glvmaehj@ru-tld.ru R=dnslookup T=remote_smtp H=ALT2.ASPMX.L.GOOGLE.COM [209.85.225.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130368 r8si12176999icq.24"', 'glvmaehj@ru-tld.ru'),
 ('2012-02-13 14:52:49', '1Rwt0F-00048v-GN', 'Completed', ''),
@@ -5079,10 +5080,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:59:20', '1Rwtcr-0000Ac-Vy', '== qoiwbjs@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'qoiwbjs@mail.ru'),
 ('2012-02-13 14:59:20', '1Rwtcs-0000Ac-1U', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:59:20', '1Rwtcs-0000Ac-1U', '== ksppvvxxdo@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'ksppvvxxdo@yahoo.com'),
-('2012-02-13 14:59:20', '1Rwtcs-0000Ac-38', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
-('2012-02-13 14:59:20', '1Rwtcs-0000Ac-38', '== ksppvvxxdo@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'ksppvvxxdo@yahoo.com'),
-('2012-02-13 14:59:20', '1Rwtcs-0000Ac-6I', '== xmdnwgppabwp@gmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'xmdnwgppabwp@gmail.com');
+('2012-02-13 14:59:20', '1Rwtcs-0000Ac-38', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:59:20', '1Rwtcs-0000Ac-38', '== ksppvvxxdo@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'ksppvvxxdo@yahoo.com'),
+('2012-02-13 14:59:20', '1Rwtcs-0000Ac-6I', '== xmdnwgppabwp@gmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'xmdnwgppabwp@gmail.com'),
 ('2012-02-13 14:59:20', '1Rwtcs-0000Ac-7u', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:59:20', '1Rwtcs-0000Ac-7u', '== ksppvvxxdo@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'ksppvvxxdo@yahoo.com'),
 ('2012-02-13 14:59:20', '1Rwtcs-0000Ac-9Q', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
@@ -5352,10 +5353,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:59:36', '1Rwtd1-0000Ac-UJ', '== rpxiqak@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'rpxiqak@mail.ru'),
 ('2012-02-13 14:59:36', '1Rwtd1-0000Ac-Vo', '== rpxiqak@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'rpxiqak@mail.ru'),
 ('2012-02-13 14:59:36', '1Rwtd2-0000Ac-1M', '== rpxiqak@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'rpxiqak@mail.ru'),
-('2012-02-13 14:59:36', '1Rwtd2-0000Ac-37', '== rpxiqak@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'rpxiqak@mail.ru'),
-('2012-02-13 14:59:36', '1Rwtd2-0000Ac-6P', '== apkgezve@bk.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'apkgezve@bk.ru'),
-('2012-02-13 14:59:36', '1Rwtd2-0000Ac-9k', '== apkgezve@bk.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'apkgezve@bk.ru');
+('2012-02-13 14:59:36', '1Rwtd2-0000Ac-37', '== rpxiqak@mail.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'rpxiqak@mail.ru');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:59:36', '1Rwtd2-0000Ac-6P', '== apkgezve@bk.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'apkgezve@bk.ru'),
+('2012-02-13 14:59:36', '1Rwtd2-0000Ac-9k', '== apkgezve@bk.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'apkgezve@bk.ru'),
 ('2012-02-13 14:59:36', '1Rwtd2-0000Ac-BL', '== yvvkccprjk@yahoo.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'yvvkccprjk@yahoo.com'),
 ('2012-02-13 14:59:36', '1Rwtd2-0000Ac-BL', '== xwvjkjh@motogonki.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'xwvjkjh@motogonki.ru'),
 ('2012-02-13 14:59:36', '1Rwtd2-0000Ac-4l', '== pfbvmiicrcidg@rdcm.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'pfbvmiicrcidg@rdcm.com'),
@@ -5628,9 +5629,9 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 14:59:50', '1RwtdD-0000Ac-SV', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:59:50', '1RwtdD-0000Ac-VU', '== kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'kyfoexpiabw@hotmail.com'),
 ('2012-02-13 14:59:50', '1RwtdD-0000Ac-VU', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
-('2012-02-13 14:59:50', '1RwtdE-0000Ac-1H', '== rrbqvbqnxc@yandex.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'rrbqvbqnxc@yandex.ru'),
-('2012-02-13 14:59:50', '1RwtdE-0000Ac-3E', '== kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'kyfoexpiabw@hotmail.com');
+('2012-02-13 14:59:50', '1RwtdE-0000Ac-1H', '== rrbqvbqnxc@yandex.ru R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'rrbqvbqnxc@yandex.ru');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 14:59:50', '1RwtdE-0000Ac-3E', '== kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'kyfoexpiabw@hotmail.com'),
 ('2012-02-13 14:59:50', '1RwtdE-0000Ac-3E', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
 ('2012-02-13 14:59:50', '1RwtdE-0000Ac-5B', '== kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'kyfoexpiabw@hotmail.com'),
 ('2012-02-13 14:59:50', '1RwtdE-0000Ac-5B', '== udbbwscdnbegrmloghuf@london.com R=dnslookup T=remote_smtp defer (-1): domain matches queue_smtp_domains, or -odqs set', 'udbbwscdnbegrmloghuf@london.com'),
@@ -5903,10 +5904,10 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:00:03', '1Rwtct-0000Ac-SK', 'Completed', ''),
 ('2012-02-13 15:00:03', '1RwtdI-0000Ac-Gr', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130803 b5si5294852lbn.1"', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 15:00:03', '1RwtdC-0000Ac-Sh', '=> rpxiqak@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1Rwtdb-0003Qc-DW"', 'rpxiqak@mail.ru'),
-('2012-02-13 15:00:03', '1RwtdC-0000Ac-Sh', 'Completed', ''),
-('2012-02-13 15:00:03', '1RwtdC-0000Ac-RA', '=> rpxiqak@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1Rwtdb-0006h8-It"', 'rpxiqak@mail.ru'),
-('2012-02-13 15:00:03', '1RwtdC-0000Ac-RA', 'Completed', '');
+('2012-02-13 15:00:03', '1RwtdC-0000Ac-Sh', 'Completed', '');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 15:00:03', '1RwtdC-0000Ac-RA', '=> rpxiqak@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1Rwtdb-0006h8-It"', 'rpxiqak@mail.ru'),
+('2012-02-13 15:00:03', '1RwtdC-0000Ac-RA', 'Completed', ''),
 ('2012-02-13 15:00:03', '1Rwtd8-0000Ac-Vz', '=> wuewduqukle@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130803 p7si5290420lbz.33"', 'wuewduqukle@gmail.com'),
 ('2012-02-13 15:00:03', '1Rwtd8-0000Ac-Vz', 'Completed', ''),
 ('2012-02-13 15:00:04', '1RwtdL-0000Ac-TG', '=> hgzoxpcafuyvjcfqqoxayss@yandex.ru R=dnslookup T=remote_smtp H=mx.yandex.ru [87.250.250.89]* C="250 2.0.0 Ok: queued on mxfront37.mail.yandex.net as 02F4cTNS-03Fq4u2D"', 'hgzoxpcafuyvjcfqqoxayss@yandex.ru'),
@@ -6226,9 +6227,9 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:00:22', '1Rwtcp-0000Ac-E7', 'Completed', ''),
 ('2012-02-13 15:00:23', '1Rwtct-0000Ac-OL', '=> xmdnwgppabwp@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130823 ic2si4513156lab.52"', 'xmdnwgppabwp@gmail.com'),
 ('2012-02-13 15:00:23', '1Rwtct-0000Ac-OL', 'Completed', ''),
-('2012-02-13 15:00:24', '1Rwlgw-00070u-FE', 'mail.tessp.ru [194.85.61.78] Operation timed out', ''),
-('2012-02-13 15:00:24', '1Rwlgw-00070u-FE', '== xlhfy@ispb.su R=dnslookup T=remote_smtp defer (60): Operation timed out', 'xlhfy@ispb.su');
+('2012-02-13 15:00:24', '1Rwlgw-00070u-FE', 'mail.tessp.ru [194.85.61.78] Operation timed out', '');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 15:00:24', '1Rwlgw-00070u-FE', '== xlhfy@ispb.su R=dnslookup T=remote_smtp defer (60): Operation timed out', 'xlhfy@ispb.su'),
 ('2012-02-13 15:00:24', '1Rwtct-0000Ac-FP', '=> xmdnwgppabwp@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130824 tu6si6334722lab.56"', 'xmdnwgppabwp@gmail.com'),
 ('2012-02-13 15:00:24', '1Rwtct-0000Ac-FP', 'Completed', ''),
 ('2012-02-13 15:00:24', '1Rwtcq-0000Ac-6y', '=> ciaoeacrltqdcy@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329130824 l6si5287858lba.55"', 'ciaoeacrltqdcy@gmail.com'),
@@ -7671,6 +7672,7 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:09:55', '1RwtTS-000E4Z-DW', 'SMTP error from remote mail server after initial connection: host mta5.am0.yahoodns.net [66.94.237.139]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http://postmaster.yahoo.com/errors/421-ts02.html', ''),
 ('2012-02-13 15:09:55', '1Rwtmm-000MsX-8e', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329131395 ic2si4524364lab.40"', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 15:09:55', '1Rwtcr-0000Ac-DF', 'SMTP error from remote mail server after initial connection: host mta7.am0.yahoodns.net [98.139.175.224]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http://postmaster.yahoo.com/errors/421-ts02.html', ''),
+('2012-02-13 15:09:55', '1Rwtmv-000MsX-Jb', '** feqdhbf@gmail.com R=dnslookup T=remote_smtp: SMTP error from remote mail server after RCPT TO:<feqdhbf@gmail.com>: host gmail-smtp-in.l.google.com [209.85.137.27]: 550-5.1.1 The email account that you tried to reach does not exist. Please tryn550-5.1.1', 'feqdhbf@gmail.com'),
 ('2012-02-13 15:09:55', '1Rwtmt-000MsX-Pw', '=> bnkahhv@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1Rwtn8-0007u0-Tc"', 'bnkahhv@mail.ru'),
 ('2012-02-13 15:09:55', '1Rwtmt-000MsX-Pw', '-> kltkmnjqq@inbox.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1Rwtn8-0007u0-Tc"', 'kltkmnjqq@inbox.ru'),
 ('2012-02-13 15:09:55', '1Rwtmt-000MsX-Pw', 'Completed', ''),
@@ -7693,9 +7695,9 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:09:55', '1Rwtmt-000MsX-Ff', '-> mkbdybrfjajrs@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1Rwtn9-0007wD-F1"', 'mkbdybrfjajrs@mail.ru'),
 ('2012-02-13 15:09:55', '1Rwtmt-000MsX-Ff', 'Completed', ''),
 ('2012-02-13 15:09:55', '1RwtdE-0000Ac-D8', 'SMTP error from remote mail server after initial connection: host mta5.am0.yahoodns.net [67.195.103.232]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http://postmaster.yahoo.com/errors/421-ts02.html', ''),
-('2012-02-13 15:09:55', '1Rwtcr-0000Ac-DF', 'SMTP error from remote mail server after initial connection: host mta7.am0.yahoodns.net [74.6.136.244]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http://postmaster.yahoo.com/errors/421-ts02.html', ''),
-('2012-02-13 15:09:55', '1Rwtcr-0000Ac-DF', '== tetkhotuovrn@yahoo.com R=dnslookup T=remote_smtp defer (0): SMTP error from remote mail server after initial connection: host mta7.am0.yahoodns.net [74.6.136.244]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http:/', 'tetkhotuovrn@yahoo.com');
+('2012-02-13 15:09:55', '1Rwtcr-0000Ac-DF', 'SMTP error from remote mail server after initial connection: host mta7.am0.yahoodns.net [74.6.136.244]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http://postmaster.yahoo.com/errors/421-ts02.html', '');
 INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 15:09:55', '1Rwtcr-0000Ac-DF', '== tetkhotuovrn@yahoo.com R=dnslookup T=remote_smtp defer (0): SMTP error from remote mail server after initial connection: host mta7.am0.yahoodns.net [74.6.136.244]: 421 4.7.0 [TS02] Messages from 194.226.74.6 temporarily deferred - 4.16.56.1; see http:/', 'tetkhotuovrn@yahoo.com'),
 ('2012-02-13 15:09:55', '1Rwtml-000MsX-Qg', '=> grereyjbpddf@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329131395 tk1si1746011lab.33"', 'grereyjbpddf@gmail.com'),
 ('2012-02-13 15:09:55', '1Rwtmt-000MsX-DS', '=> bnkahhv@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1Rwtn9-0007x6-Mz"', 'bnkahhv@mail.ru'),
 ('2012-02-13 15:09:55', '1Rwtmt-000MsX-DS', '-> mkbdybrfjajrs@mail.ru R=dnslookup T=remote_smtp H=mxs.mail.ru [94.100.176.20]* C="250 OK id=1Rwtn9-0007x6-Mz"', 'mkbdybrfjajrs@mail.ru'),
@@ -7971,6 +7973,7 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:10:14', '1RwtmZ-000MsX-7h', 'Completed', ''),
 ('2012-02-13 15:10:14', '1Rwtms-000MsX-9r', '=> xmdnwgppabwp@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.27] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329131414 c6si5303280lbn.16"', 'xmdnwgppabwp@gmail.com'),
 ('2012-02-13 15:10:14', '1Rwtms-000MsX-9r', 'Completed', ''),
+('2012-02-13 15:10:14', '1RwtmW-000MsX-E0', '** bswdhpjxorekjaelb@gmail.com R=dnslookup T=remote_smtp: SMTP error from remote mail server after RCPT TO:<bswdhpjxorekjaelb@gmail.com>: host gmail-smtp-in.l.google.com [209.85.137.27]: 550-5.1.1 The email account that you tried to reach does not exist. ', 'bswdhpjxorekjaelb@gmail.com'),
 ('2012-02-13 15:10:15', '1RwtnT-000B7I-0D', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 15:10:15', '1RwtnT-000B7I-0D', 'Completed', ''),
 ('2012-02-13 15:10:15', '1RwtmW-000MsX-E0', 'Completed', ''),
@@ -8015,13 +8018,13 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:10:36', '1Rwtmo-000MsX-8w', 'Completed', ''),
 ('2012-02-13 15:10:42', '1RviYx-000Llg-Eg', 'Spool file is locked (another process is handling this message)', ''),
 ('2012-02-13 15:10:42', '1Rwtmi-000MsX-Tb', '=> iuh@mtw.ru R=dnslookup T=remote_smtp H=pochta.mtw.ru [193.124.133.203] C="250 2.0.0 Ok: queued as 3AA9F15ED04"', 'iuh@mtw.ru'),
-('2012-02-13 15:10:42', '1Rwtmi-000MsX-Tb', 'Completed', ''),
+('2012-02-13 15:10:42', '1Rwtmi-000MsX-Tb', 'Completed', '');
+INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:10:43', '1Rwtme-000MsX-N7', '=> iuh@mtw.ru R=dnslookup T=remote_smtp H=pochta.mtw.ru [193.124.133.203]* C="250 2.0.0 Ok: queued as 72FD515ED04"', 'iuh@mtw.ru'),
 ('2012-02-13 15:10:43', '1Rwtme-000MsX-N7', 'Completed', ''),
 ('2012-02-13 15:10:43', '1Rwtme-000MsX-Cq', '=> iuh@mtw.ru R=dnslookup T=remote_smtp H=pochta.mtw.ru [193.124.133.203]* C="250 2.0.0 Ok: queued as 87BDA15ED04"', 'iuh@mtw.ru'),
 ('2012-02-13 15:10:43', '1Rwtme-000MsX-Cq', 'Completed', ''),
-('2012-02-13 15:10:43', '1Rwtme-000MsX-62', '=> iuh@mtw.ru R=dnslookup T=remote_smtp H=pochta.mtw.ru [193.124.133.203]* C="250 2.0.0 Ok: queued as 98D4815ED04"', 'iuh@mtw.ru');
-INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
+('2012-02-13 15:10:43', '1Rwtme-000MsX-62', '=> iuh@mtw.ru R=dnslookup T=remote_smtp H=pochta.mtw.ru [193.124.133.203]* C="250 2.0.0 Ok: queued as 98D4815ED04"', 'iuh@mtw.ru'),
 ('2012-02-13 15:10:43', '1Rwtme-000MsX-62', 'Completed', ''),
 ('2012-02-13 15:10:43', '1RwtmW-000MsX-41', '=> iuh@mtw.ru R=dnslookup T=remote_smtp H=pochta.mtw.ru [193.124.133.203]* C="250 2.0.0 Ok: queued as ABF1A15ED04"', 'iuh@mtw.ru'),
 ('2012-02-13 15:10:43', '1RwtmW-000MsX-41', 'Completed', ''),
@@ -8066,6 +8069,7 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:11:03', '1Rwtmp-000MsX-PZ', '=> kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp H=mx2.hotmail.com [65.55.92.152] C="250 <ycsbjfepksjqkhivhnhztuxztwrhjqq@whois.somehost.ru> Queued mail for delivery"', 'kyfoexpiabw@hotmail.com'),
 ('2012-02-13 15:11:05', '1Rwtmp-000MsX-LC', '=> kyfoexpiabw@hotmail.com R=dnslookup T=remote_smtp H=mx2.hotmail.com [65.55.92.168] C="250 <kyzapnoqcaagbzrlsbcmgjogceqvsgs@whois.somehost.ru> Queued mail for delivery"', 'kyfoexpiabw@hotmail.com'),
 ('2012-02-13 15:11:05', '1RwtmX-000MsX-8g', 'Spool file is locked (another process is handling this message)', ''),
+('2012-02-13 15:11:05', '1RwtmX-000MsX-8g', '** bswdhpjxorekjaelb@gmail.com R=dnslookup T=remote_smtp: SMTP error from remote mail server after RCPT TO:<bswdhpjxorekjaelb@gmail.com>: host gmail-smtp-in.l.google.com [209.85.137.27]: 550-5.1.1 The email account that you tried to reach does not exist. ', 'bswdhpjxorekjaelb@gmail.com'),
 ('2012-02-13 15:11:05', '1RwtoH-0004t6-5w', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 15:11:05', '1RwtoH-0004t6-5w', 'Completed', ''),
 ('2012-02-13 15:11:05', '1RwtmX-000MsX-8g', 'Completed', ''),
@@ -8125,6 +8129,7 @@ INSERT INTO `log` (`created`, `int_id`, `str`, `address`) VALUES
 ('2012-02-13 15:11:41', '1RwtmW-000MsX-R3', '-> fwjatugliro@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.26] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329131501 l6si5298420lba.62"', 'fwjatugliro@gmail.com'),
 ('2012-02-13 15:11:41', '1RwtmW-000MsX-R3', '-> qefpvgewrxy@gmail.com R=dnslookup T=remote_smtp H=gmail-smtp-in.l.google.com [209.85.137.26] X=TLSv1:RC4-SHA:128 C="250 2.0.0 OK 1329131501 l6si5298420lba.62"', 'qefpvgewrxy@gmail.com'),
 ('2012-02-13 15:11:41', '1RwtmW-000MsX-R3', 'Completed', ''),
+('2012-02-13 15:11:41', '1RwtmW-000MsX-CK', '** bswdhpjxorekjaelb@gmail.com R=dnslookup T=remote_smtp: SMTP error from remote mail server after RCPT TO:<bswdhpjxorekjaelb@gmail.com>: host gmail-smtp-in.l.google.com [209.85.137.26]: 550-5.1.1 The email account that you tried to reach does not exist. ', 'bswdhpjxorekjaelb@gmail.com'),
 ('2012-02-13 15:11:41', '1Rwtor-000H1H-Kh', '=> :blackhole: <tpxmuwr@somehost.ru> R=blackhole_router', '<tpxmuwr@somehost.ru>'),
 ('2012-02-13 15:11:41', '1Rwtor-000H1H-Kh', 'Completed', ''),
 ('2012-02-13 15:11:41', '1RwtmW-000MsX-CK', 'Completed', ''),
@@ -8162,7 +8167,6 @@ CREATE TABLE IF NOT EXISTS `message` (
 --
 
 INSERT INTO `message` (`created`, `id`, `int_id`, `str`, `status`) VALUES
-('2012-02-13 14:39:22', '', '1RwtJa-000AFJ-3B', '<= <> R=1RookS-000Pg8-VO U=mailnull P=local S=3958', NULL),
 ('2012-02-13 14:39:47', '120213143234.DOMOI_STAT_CHNG_RU_DOMAIN_UPDATED.718757@whois.somehost.ru', '1RwtJz-0009RI-QK', '<= tpxmuwr@somehost.ru H=mail.somehost.com [84.154.134.45] P=esmtp S=2858 id=120213143234.DOMOI_STAT_CHNG_RU_DOMAIN_UPDATED.718757@whois.somehost.ru', NULL),
 ('2012-02-13 14:39:47', '120213143234.DOMOI_STAT_CHNG_RU_DOMAIN_UPDATED.954450@whois.somehost.ru', '1RwtJz-0009RI-OQ', '<= tpxmuwr@somehost.ru H=mail.somehost.com [84.154.134.45] P=esmtp S=2605 id=120213143234.DOMOI_STAT_CHNG_RU_DOMAIN_UPDATED.954450@whois.somehost.ru', NULL),
 ('2012-02-13 14:39:47', '120213143251.ANKETA_FILLED.495158@whois.somehost.ru', '1RwtJz-0009RI-M6', '<= tpxmuwr@somehost.ru H=mail.somehost.com [84.154.134.45] P=esmtp S=3017 id=120213143251.ANKETA_FILLED.495158@whois.somehost.ru', NULL),
