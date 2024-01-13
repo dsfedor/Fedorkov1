@@ -24,25 +24,26 @@ my $dbh;
 #DB connect
 $dbh = DBI->connect("DBI:mysql:database=$dbname;host=$dbhost",$dbuser, $dbpass) || die print "Can't connect";
 
-#iterate through all log entries
+#main cycle - iterate through all log entries
 foreach (@prLog) {
     my $tmp1;  #the variable for debug
     $tmp1 = $_;
-    #get all string values
-    @strPrLog = split ;
+    @strPrLog = split ;  #get all string values
+        #check flag and choose the table
         if ($tmp1 =~ /<=/){
-        &procStrIn;
+         &procStrIn;
         }
         else {
-        &procStrOth;
+         &procStrOth;
         }
 
 
     #print LOG "$tmp1 \n";
 
 }
-close PRLOG;
+
 #close LOG;
+close PRLOG;
 $dbh->disconnect();
 
 print "finish \n";
@@ -68,21 +69,22 @@ my $tmp2;
 
             #find id field
             foreach (@strPL_in_w) {
-                    $tmp2 = $_;
-                    if ($tmp2 =~ /id=/){
-                    $id = substr($tmp2, 3); #cut the first 3 symbols
-                    last;
-                    }
+                     $tmp2 = $_;
+                     if ($tmp2 =~ /id=/){
+                      $id = substr($tmp2, 3); #cut the first 3 symbols
+                      last;
+                     }
 
 
 
             }
-  if ($id ne ''){
-  #wright the ready fields into database
-  $dbh->do("insert into message (created, id, int_id, str) values('$created','$id','$int_id','$str')");
-  }
 
- print "proc1 $created $id $int_id \n"; 
+    if ($id ne ''){
+      #wright the ready fields into database
+      $dbh->do("insert into message (created, id, int_id, str) values('$created','$id','$int_id','$str')")
+    }
+
+ print "into message $created $id $int_id \n";
  #print LOG "procedure1 \n";
  }
 
@@ -103,22 +105,24 @@ my $tmp3;
      $created = $created . " " . shift(@strPL_in_w);
      $int_id = shift(@strPL_in_w);
      $str = join " ", @strPL_in_w; #result without first two symbols
-     $str =~ s/[\\\?\']//g;   #delet "?", "\" and "'" from string
-     
-#check the first availability the mail address
+     $str =~ s/[\\\?\']//g;   #delet "?" and "\" and "'" from string
+
+            #check the first availability the mail address
             foreach (@strPL_in_w) {
                    $tmp3 = $_;
                    if ($tmp3 =~ /.+@.+\..+/i){
-                   $address = $tmp3;
-                   last;  #first availability(!)
+                    $address = $tmp3;
+                    last;  #first availability(!)
                    }
 
 
 
             }
-  #wright the ready fields into database
-  $dbh->do("insert into log (created, int_id, str, address) values('$created','$int_id','$str','$address')");
 
- print "proc2 $created $int_id $address \n";
+
+   #wright the ready fields into database
+   $dbh->do("insert into log (created, int_id, str, address) values('$created','$int_id','$str','$address')");
+
+ print "into log $created $int_id $address \n";
  #print LOG "procedure2 \n";
  }
