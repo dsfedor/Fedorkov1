@@ -6,9 +6,10 @@ use DBI;
 
 #open the file being processed
 open (PRLOG, "c:/log/out") or die "was error $!";
-my @strPrLog;
+my @prLog;  #all srings from the log
+my @strPrLog;   #one string from the log
 #get all strings from log
-my (@prLog) = <PRLOG>;
+@prLog = <PRLOG>;
 
 
 #host MySQL
@@ -26,11 +27,10 @@ $dbh = DBI->connect("DBI:mysql:database=$dbname;host=$dbhost",$dbuser, $dbpass) 
 
 #main cycle - iterate through all log entries
 foreach (@prLog) {
-    my $tmp1;  #the variable for debug
-    $tmp1 = $_;
-    @strPrLog = split ;  #get all string values
+
+        @strPrLog = split ;  #get all string values
         #check flag and choose the table
-        if ($tmp1 =~ /<=/){
+        if (/<=/){
          &procStrIn;
         }
         else {
@@ -38,7 +38,6 @@ foreach (@prLog) {
         }
 
 
-    #print LOG "$tmp1 \n";
 
 }
 
@@ -56,26 +55,21 @@ my $created;
 my $id;
 my $int_id;
 my $str;
-my @strPL_in_w; #for change fields
-my $tmp2;
-
-@strPL_in_w = @strPrLog;
 
 
-     $created = shift(@strPL_in_w);
-     $created = $created . " " . shift(@strPL_in_w);
-     $int_id = shift(@strPL_in_w);
-     $str = join " ", @strPL_in_w; #result without first two symbols
+
+
+     $created = shift(@strPrLog); #add data to created
+     $created = $created . " " . shift(@strPrLog);  #add time to created
+     $str = join " ", @strPrLog; #result without first two fields
+     $int_id = shift(@strPrLog); #add int_id to int_id field
 
             #find id field
-            foreach (@strPL_in_w) {
-                     $tmp2 = $_;
-                     if ($tmp2 =~ /id=/){
-                      $id = substr($tmp2, 3); #cut the first 3 symbols
+            foreach (@strPrLog) {
+                     if (/id=/){
+                      $id = substr($_, 3); #cut the first 3 symbols
                       last;
                      }
-
-
 
             }
 
@@ -85,7 +79,7 @@ my $tmp2;
     }
 
  print "into message $created $id $int_id \n";
- #print LOG "procedure1 \n";
+
  }
 
 #processing others strings
@@ -95,23 +89,21 @@ my $created;
 my $int_id;
 my $str;
 my $address;
-my @strPL_in_w; #for change fields
-my $tmp3;
-
-@strPL_in_w = @strPrLog;
 
 
-     $created = shift(@strPL_in_w);
-     $created = $created . " " . shift(@strPL_in_w);
-     $int_id = shift(@strPL_in_w);
-     $str = join " ", @strPL_in_w; #result without first two symbols
+
+
+     $created = shift(@strPrLog);
+     $created = $created . " " . shift(@strPrLog);
+     $str = join " ", @strPrLog; #result without first two fields
      $str =~ s/[\\\?\']//g;   #delet "?" and "\" and "'" from string
+     $int_id = shift(@strPrLog);
+
 
             #check the first availability the mail address
-            foreach (@strPL_in_w) {
-                   $tmp3 = $_;
-                   if ($tmp3 =~ /.+@.+\..+/i){
-                    $address = $tmp3;
+            foreach (@strPrLog) {
+                   if (/.+@.+\..+/i){
+                    $address = $_;
                     last;  #first availability(!)
                    }
 
@@ -124,5 +116,5 @@ my $tmp3;
    $dbh->do("insert into log (created, int_id, str, address) values('$created','$int_id','$str','$address')");
 
  print "into log $created $int_id $address \n";
- #print LOG "procedure2 \n";
+
  }
