@@ -79,8 +79,8 @@ my $tmp2;
 
             }
 
-    if ($id ne ''){
-      #wright the ready fields into database
+    if ($id){
+      #if "id" isn't empty - wright the ready fields into database
       $dbh->do("insert into message (created, id, int_id, str) values('$created','$id','$int_id','$str')")
     }
 
