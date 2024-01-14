@@ -22,9 +22,7 @@ do
           if ($n == 100) {		
           echo "\n"."MORE THAN 100 ROWS WERE FOUND!";
 	  break;
-	  }
-             
-       
+	  }                   
 }
 while($row = mysql_fetch_array($result));
 ?>
