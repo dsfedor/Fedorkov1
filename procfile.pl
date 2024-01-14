@@ -11,7 +11,6 @@ my @strPrLog;   #one string from the log
 #get all strings from log
 @prLog = <PRLOG>;
 
-
 #host MySQL
 my($dbhost) ='localhost';
 #user MySQL
@@ -36,9 +35,6 @@ foreach (@prLog) {
         else {
          &procStrOth;
         }
-
-
-
 }
 
 #close LOG;
@@ -56,9 +52,6 @@ my $id;
 my $int_id;
 my $str;
 
-
-
-
      $created = shift(@strPrLog); #add data to created
      $created = $created . " " . shift(@strPrLog);  #add time to created
      $str = join " ", @strPrLog; #result without first two fields
@@ -70,7 +63,6 @@ my $str;
                       $id = substr($_, 3); #cut the first 3 symbols
                       last;
                      }
-
             }
 
     if ($id){
@@ -90,15 +82,11 @@ my $int_id;
 my $str;
 my $address;
 
-
-
-
      $created = shift(@strPrLog);
      $created = $created . " " . shift(@strPrLog);
      $str = join " ", @strPrLog; #result without first two fields
      $str =~ s/[\\\?\']//g;   #delet "?" and "\" and "'" from string
      $int_id = shift(@strPrLog);
-
 
             #check the first availability the mail address
             foreach (@strPrLog) {
@@ -106,11 +94,7 @@ my $address;
                     $address = $_;
                     last;  #first availability(!)
                    }
-
-
-
             }
-
 
    #wright the ready fields into database
    $dbh->do("insert into log (created, int_id, str, address) values('$created','$int_id','$str','$address')");
