@@ -24,10 +24,10 @@ foreach (@prLog) {
         @strPrLog = split ;  #get all string values
         #check flag and choose the table
         if (/<=/){
-         &procStrIn;
+         &procStrIn(@strPrLog);
         }
         else {
-         &procStrOth;
+         &procStrOth(@strPrLog);
         }
 }
 
@@ -46,13 +46,13 @@ my $id;
 my $int_id;
 my $str;
 
-     $created = shift(@strPrLog); #add data to created
-     $created = $created . " " . shift(@strPrLog);  #add time to created
-     $str = join " ", @strPrLog; #result without first two fields
-     $int_id = shift(@strPrLog); #add int_id to int_id field
+     $created = shift(@_); #add data to created
+     $created = $created . " " . shift(@_);  #add time to created
+     $str = join " ", @_; #result without first two fields
+     $int_id = shift(@_); #add int_id to int_id field
 
             #find id field
-            foreach (@strPrLog) {
+            foreach (@_) {
                      if (/id=/){
                       $id = substr($_, 3); #cut the first 3 symbols
                       last;
@@ -76,14 +76,14 @@ my $int_id;
 my $str;
 my $address;
 
-     $created = shift(@strPrLog);
-     $created = $created . " " . shift(@strPrLog);
-     $str = join " ", @strPrLog; #result without first two fields
+     $created = shift(@_);
+     $created = $created . " " . shift(@_);
+     $str = join " ", @_; #result without first two fields
      $str =~ s/[\\\?\']//g;   #delet "?" and "\" and "'" from string
-     $int_id = shift(@strPrLog);
+     $int_id = shift(@_);
 
             #check the first availability the mail address
-            foreach (@strPrLog) {
+            foreach (@_) {
                    if (/.+@.+\..+/i){
                     $address = $_;
                     last;  #first availability(!)
