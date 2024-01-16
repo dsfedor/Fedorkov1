@@ -75,21 +75,25 @@ my $created;
 my $int_id;
 my $str;
 my $address;
+my $flag;
 
      $created = shift(@_);
      $created = $created . " " . shift(@_);
      $str = join " ", @_; #result without first two fields
      $str =~ s/[\\\?\']//g;   #delet "?" and "\" and "'" from string
      $int_id = shift(@_);
+     $flag = shift(@_);  #for check only
 
+        if ((length($flag)) == 2){    #check to ignore mail for rows without flag
             #check the first availability the mail address
             foreach (@_) {
                    if (/.+@.+\..+/i){
+                    s/[<>\:]//g;  #delet "<" and ">" and ":" from string (from $_)
                     $address = $_;
                     last;  #first availability(!)
                    }
             }
-
+         }
    #wright the ready fields into database
    $dbh->do("insert into log (created, int_id, str, address) values('$created','$int_id','$str','$address')");
 
