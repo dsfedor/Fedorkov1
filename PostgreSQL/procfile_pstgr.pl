@@ -80,7 +80,7 @@ my $flag;
      $created = shift(@_);
      $created = $created . " " . shift(@_);
      $str = join " ", @_; #result without first two fields
-     $str =~ s/[\\\?\']//g;   #delet "?" and "\" and "'" from string
+     $str =~ s/[\\\?\']//g;   #delete "?" and "\" and "'" from string
      $int_id = shift(@_);
      $flag = shift(@_);  #for check only
 
@@ -88,7 +88,7 @@ my $flag;
             #check the first availability the mail address
             foreach (@_) {
                    if (/.+@.+\..+/i){
-                    s/[<>\:]//g;  #delet "<" and ">" and ":" from string (from $_)
+                    s/[<>\:]//g;  #delete "<" and ">" and ":" from string (from $_)
                     $address = $_;
                     last;  #first availability(!)
                    }
