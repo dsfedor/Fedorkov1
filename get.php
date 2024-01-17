@@ -8,23 +8,23 @@
 <textarea rows='50' cols='200'>
 <?php
 require 'connect.php'; // inqlude file with connection string
-mysql_set_charset('utf8'); // sets the client encoding
+$mysqli->set_charset("utf8");
 $address = trim($_REQUEST['TXTaddress']); // get content "address" field and cut possible spaces at string start
 $sql_select = "SELECT message.int_id, message.created, message.str FROM message JOIN log USING (int_id) WHERE log.address = '{$address}' UNION SELECT int_id, created, str FROM  log WHERE address = '{$address}' ORDER BY int_id, created"; 
-$result = mysql_query($sql_select); // run query
-$row = mysql_fetch_array($result); // getting answer from DB
+
+$res = $mysqli -> query($sql_select);  // run query
+ 
 $n=0;
-do
-{
-       $n++;   
-       echo
-       $row['created']." ".$row['str']."\n";          
-          if ($n == 100) {		
-          echo "\n"."MORE THAN 100 ROWS WERE FOUND!";
-	  break;
-	  }                   
+
+while ($row = $res -> fetch_assoc()) {
+           $n++;
+           if ($n == 101) {		
+           echo "\n"."MORE THAN 100 ROWS WERE FOUND!";
+	   break;
+	   }          
+      echo $row['created']." ".$row['str']."\n";
 }
-while($row = mysql_fetch_array($result));
+$mysqli->close();
 ?>
 </textarea>
 </form>
